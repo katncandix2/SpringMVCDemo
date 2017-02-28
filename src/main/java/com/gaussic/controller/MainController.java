@@ -1,3 +1,4 @@
+
 package com.gaussic.controller;
 
 import com.gaussic.model.UserEntity;
@@ -12,9 +13,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.List;
 
+
 /**
  * Created by dzkan on 2016/3/8.
  */
+
 @Controller
 public class MainController {
 
@@ -112,3 +115,4 @@ public class MainController {
         return "redirect:/admin/users";
     }
 }
+

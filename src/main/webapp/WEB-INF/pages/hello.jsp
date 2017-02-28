@@ -1,4 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -6,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <title>SpringMVC Demo 首页</title>
+    <title>SpringMVC 博客管理</title>
 
     <!-- 新 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -19,10 +21,16 @@
     <![endif]-->
 </head>
 <body>
-<h1>这里是SpringMVC Demo首页</h1>
+<div class="container">
 
-<h3>出现此页面，说明配置成功。</h3>
-<a href="/test111">test</a>
+    <!-- 如果用户列表非空 -->
+    <c:if test="${!empty test}">
+            <c:forEach items="${test}" var="emp">
+                <c:out value="${emp.id}"/>
+                <c:out value="${emp.name}"/>
+            </c:forEach>
+    </c:if>
+</div>
 
 <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
 <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>

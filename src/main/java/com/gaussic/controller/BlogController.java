@@ -1,3 +1,4 @@
+
 package com.gaussic.controller;
 
 import com.gaussic.model.BlogEntity;
@@ -14,9 +15,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.List;
 
+
 /**
  * Created by dzkan on 2016/3/18.
  */
+
 @Controller
 public class BlogController {
 
@@ -94,3 +97,4 @@ public class BlogController {
         return "redirect:/admin/blogs";
     }
 }
+
