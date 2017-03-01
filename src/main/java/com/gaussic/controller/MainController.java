@@ -99,7 +99,7 @@ public class MainController {
 
         // 更新用户信息
         userRepository.updateUser(user.getNickname(), user.getFirstName(),
-                user.getLastName(), user.getPassword(), user.getId());
+                user.getLastName(), user.getPassword());
         userRepository.flush(); // 刷新缓冲区
         return "redirect:/admin/users";
     }

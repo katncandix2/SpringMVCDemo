@@ -1,10 +1,9 @@
 package com.gaussic.model;
 
 import javax.persistence.*;
-import java.util.Collection;
 
 /**
- * Created by dzkan on 2016/3/8.
+ * Created by ACER on 2017/3/1.
  */
 @Entity
 @Table(name = "user", schema = "springdemo", catalog = "")
@@ -14,10 +13,10 @@ public class UserEntity {
     private String password;
     private String firstName;
     private String lastName;
-    private Collection<BlogEntity> blogsById;
+    private String email;
 
     @Id
-    @Column(name = "id", nullable = false)
+    @Column(name = "id")
     public int getId() {
         return id;
     }
@@ -27,7 +26,7 @@ public class UserEntity {
     }
 
     @Basic
-    @Column(name = "nickname", nullable = false, length = 45)
+    @Column(name = "nickname")
     public String getNickname() {
         return nickname;
     }
@@ -37,7 +36,7 @@ public class UserEntity {
     }
 
     @Basic
-    @Column(name = "password", nullable = false, length = 45)
+    @Column(name = "password")
     public String getPassword() {
         return password;
     }
@@ -47,7 +46,7 @@ public class UserEntity {
     }
 
     @Basic
-    @Column(name = "first_name", nullable = true, length = 45)
+    @Column(name = "first_name")
     public String getFirstName() {
         return firstName;
     }
@@ -57,13 +56,23 @@ public class UserEntity {
     }
 
     @Basic
-    @Column(name = "last_name", nullable = true, length = 45)
+    @Column(name = "last_name")
     public String getLastName() {
         return lastName;
     }
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    @Basic
+    @Column(name = "email")
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     @Override
@@ -78,6 +87,7 @@ public class UserEntity {
         if (password != null ? !password.equals(that.password) : that.password != null) return false;
         if (firstName != null ? !firstName.equals(that.firstName) : that.firstName != null) return false;
         if (lastName != null ? !lastName.equals(that.lastName) : that.lastName != null) return false;
+        if (email != null ? !email.equals(that.email) : that.email != null) return false;
 
         return true;
     }
@@ -89,15 +99,7 @@ public class UserEntity {
         result = 31 * result + (password != null ? password.hashCode() : 0);
         result = 31 * result + (firstName != null ? firstName.hashCode() : 0);
         result = 31 * result + (lastName != null ? lastName.hashCode() : 0);
+        result = 31 * result + (email != null ? email.hashCode() : 0);
         return result;
-    }
-
-    @OneToMany(mappedBy = "userByUserId")
-    public Collection<BlogEntity> getBlogsById() {
-        return blogsById;
-    }
-
-    public void setBlogsById(Collection<BlogEntity> blogsById) {
-        this.blogsById = blogsById;
     }
 }

@@ -25,6 +25,7 @@
 <div class="container">
     <h1>SpringMVC 修改博客</h1>
     <hr/>
+
     <form:form action="/admin/blogs/updateP" method="post" commandName="blogP" role="form">
         <div class="form-group">
             <label for="title">Title:</label>

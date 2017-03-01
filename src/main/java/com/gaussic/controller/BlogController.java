@@ -42,6 +42,7 @@ public class BlogController {
     public String addBlog(ModelMap modelMap) {
         List<UserEntity> userList = userRepository.findAll();
         // 向jsp注入用户列表
+
         modelMap.addAttribute("userList", userList);
         return "admin/addBlog";
     }
