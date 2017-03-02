@@ -45,7 +45,7 @@
             <div class="profile navbar-right" >
                 <ul class="nav navbar-nav">
                     <li><a href="/login">登陆</a></li>
-                    <li><a href="#">注册</a></li>
+                    <li><a href="/register">注册</a></li>
                 </ul>
                 <p class="navbar-text">您好,
                     <a href="#" class="navbar-link">${requestScope.user.email}</a>

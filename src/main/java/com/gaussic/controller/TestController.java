@@ -18,12 +18,14 @@ public class TestController {
     // 自动装配数据库接口，不需要再写原始的Connection来操作数据库
     @Autowired
     TestRepository testRepository;
+
+
     @RequestMapping(value = "/test111")
     public String test(ModelMap modelMap){
         // 自动装配数据库接口，不需要再写原始的Connection来操作数据库
         List<TestEntity> testEntities = testRepository.findAll();
-        modelMap.addAttribute("test", testEntities);
 
+        modelMap.addAttribute("test", testEntities);
         return "hello";
     }
 }

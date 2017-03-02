@@ -17,30 +17,28 @@
 <div class="container" >
 
 
-    <form class="form-signin" role="form" action="/CheckLogin" method="post">
+    <form class="form-signin" role="form" action="/CheckRegister" method="post">
 
         <%--<h2 class="form-signin-heading ">请登录</h2>
         <a href="#"><h3>注册</h3></a>--%>
 
-            <div align="center">
-                <a href="/">
-                    <img src="img/icon/timg1.jpg" >
-                </a>
-            </div>
-            <div align="center">
-                <ul class="nav navbar-nav">
-                    <li ><a href="/login">登录</a></li>
-                    <li ><a href="/register">注册</a></li>
-                </ul>
-            </div>
-        <input type="email" class="form-control" placeholder="邮箱地址" required="required" autofocus="" name="email">
-        <input type="password" class="form-control" placeholder="密码" required="required" name="password">
-        <div class="checkbox">
-            <label>
-                <input type="checkbox" value="remember-me"> 记住我
-            </label>
+        <div align="center">
+            <a href="/">
+                <img src="img/icon/timg1.jpg" >
+            </a>
         </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
+        <div align="center">
+            <ul class="nav navbar-nav">
+                <li ><a href="/login">登录</a></li>
+                <li ><a href="/register">注册</a></li>
+            </ul>
+        </div>
+            <input type="text" class="form-control" placeholder="用户名" required="required" autofocus="" name="nickname">
+            <input type="email" class="form-control" placeholder="邮箱地址" required="required" autofocus="" name="email">
+            <input type="password" class="form-control" placeholder="密码" required="required" name="password">
+
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit">注册</button>
     </form>
 
 </div>

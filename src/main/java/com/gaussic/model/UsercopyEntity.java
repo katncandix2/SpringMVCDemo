@@ -14,7 +14,7 @@ public class UsercopyEntity {
 
     @Basic
     @Column(name = "nickname")
-    private String getNickname() {
+    public String getNickname() {
         return nickname;
     }
 

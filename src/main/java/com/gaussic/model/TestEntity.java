@@ -1,10 +1,12 @@
 package com.gaussic.model;
 
+
 import javax.persistence.*;
 
 /**
  * Created by ACER on 2017/2/28.
  */
+
 @Entity
 @Table(name = "test", schema = "springdemo", catalog = "")
 public class TestEntity {
