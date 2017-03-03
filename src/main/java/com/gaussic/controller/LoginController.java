@@ -1,10 +1,10 @@
 package com.gaussic.controller;
 
-import com.gaussic.Service.LoginSerivce;
 import com.gaussic.model.UsercopyEntity;
 import com.gaussic.repository.UserCopyRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -40,17 +40,27 @@ public class LoginController {
     }
     //登录验证
     @RequestMapping(value = "/CheckLogin" ,method = RequestMethod.POST)
-    public String CheckLogin(UsercopyEntity usercopyEntity){
-        System.out.println(usercopyEntity.getEmail()+usercopyEntity.getPassword());
-        LoginSerivce serivce = new LoginSerivce();
-        list = userCopyRepository.findAll();
-        if(serivce.CheckLogin(list,usercopyEntity)){
-            return "login/loginSuccess";
+    public String CheckLogin(UsercopyEntity usercopyEntity,ModelMap modelMap){
+        UsercopyEntity src = userCopyRepository.find_user_byEmail(usercopyEntity.getEmail());
+        if (src!=null){
+            if (src.getPassword().equals(usercopyEntity.getPassword())){
+                modelMap.addAttribute("user",src);
+                return "index";
+            }
+            else{
+                return "login/loginFail";
+            }
         }
-        else {
-            return "login/loginFail";
-        }
+        return "login/loginFail";
     }
+    //注销
+    @RequestMapping(value = "/unLogin" ,method = RequestMethod.GET)
+    public String unLogin(ModelMap modelMap){
+
+        modelMap.remove("user");
+        return "index";
+    }
+
     //注册验证
     @RequestMapping(value = "/CheckRegister",method = RequestMethod.POST)
     public String CheckRegister(UsercopyEntity usercopyEntity){

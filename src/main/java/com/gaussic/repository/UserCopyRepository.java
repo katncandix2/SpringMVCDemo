@@ -24,4 +24,8 @@ public interface UserCopyRepository  extends JpaRepository<UsercopyEntity, Integ
             "pPassword where  userCp.id=:pId" )
     void updateBlog(@Param("pNickname") String nickname,@Param("pEmail") String email,@Param("pPassword")
                     String  password,@Param("pId") int id);
+
+
+    @Query(value = "select user from  UsercopyEntity  user where user.email=:pemail")
+    UsercopyEntity find_user_byEmail(@Param("pemail") String email);
 }
