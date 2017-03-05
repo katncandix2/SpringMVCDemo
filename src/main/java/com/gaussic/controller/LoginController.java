@@ -45,6 +45,7 @@ public class LoginController {
         if (src!=null){
             if (src.getPassword().equals(usercopyEntity.getPassword())){
                 modelMap.addAttribute("user",src);
+
                 return "index";
             }
             else{
