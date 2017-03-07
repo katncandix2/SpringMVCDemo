@@ -10,7 +10,9 @@
     <title>SpringMVC 博文详情</title>
 
     <!-- 新 Bootstrap 核心 CSS 文件 -->
-    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="icon" href="http://v3.bootcss.com/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../../../mycss/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../mycss/mycss.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,6 +22,7 @@
     <![endif]-->
 </head>
 <body>
+<jsp:include page="../NavigationBar/blog_NavigationBar.jsp"/>
 <div class="container">
     <h1>SpringMVC 博文详情</h1>
     <hr/>

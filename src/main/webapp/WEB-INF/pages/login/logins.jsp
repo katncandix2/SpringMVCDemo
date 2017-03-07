@@ -8,11 +8,11 @@
     <meta name="author" content="">
     <link rel="icon" href="http://v3.bootcss.com/favicon.ico">
     <title>登录页面</title>
-    <link href="mycss/bootstrap.min.css" rel="stylesheet">
-    <link href="mycss/signin.css" rel="stylesheet">
-    <link href="mycss/login.css" rel="stylesheet">
+    <link href="../../../mycss/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../mycss/signin.css" rel="stylesheet">
+    <link href="../../../mycss/login.css" rel="stylesheet">
 </head>
-<body background="img/background/Ducks on a Misty Pond.jpg">
+<body background="../../../img/background/Ducks on a Misty Pond.jpg">
 
 <div class="container" >
 
@@ -24,7 +24,7 @@
 
             <div align="center">
                 <a href="/">
-                    <img src="img/icon/timg1.jpg" >
+                    <img src="../../../img/icon/timg1.jpg" >
                 </a>
             </div>
             <div align="center">
@@ -44,6 +44,6 @@
     </form>
 
 </div>
-<script src="myjs/ie-emulation-modes-warning.js"></script>
-<script src="myjs/ie10-viewport-bug-workaround.js"></script>
+<script src="../../../myjs/ie-emulation-modes-warning.js"></script>
+<script src="../../../myjs/ie10-viewport-bug-workaround.js"></script>
 </body></html>

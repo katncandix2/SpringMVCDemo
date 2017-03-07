@@ -7,8 +7,8 @@
     <meta charset="utf-8">
     <title>数字媒体学习网站</title>
     <link rel="icon" href="http://v3.bootcss.com/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="mycss/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="mycss/mycss.css">
+    <link rel="stylesheet" type="text/css" href="../../../mycss/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../mycss/mycss.css">
 
 
 </head>
@@ -68,7 +68,7 @@
     <div class="carousel-inner">
         <div class="item active">
             <a href="#">
-                <img src="img/background/Antelope Canyon.jpg" alt="" >
+                <img src="../../../img/background/Antelope Canyon.jpg" alt="" >
             </a>
             <div class="carousel-caption">
                 <h2>数字媒体课程学习</h2>
@@ -79,7 +79,7 @@
 
         <div class="item">
             <a href="#">
-                <img src="img/background/Bahamas Aerial.jpg" alt="" >
+                <img src="../../../img/background/Bahamas Aerial.jpg" alt="" >
             </a>
             <div class="carousel-caption">
                 <h2>数字媒体课程学习</h2>
@@ -99,8 +99,8 @@
     </div>
 </div>
 
-<script src="myjs/jquery-3.1.1.min.js"></script>
-<script src="myjs/bootstrap.min.js"></script>
-<script src ="myjs/holder.js"></script>
+<script src="../../../myjs/jquery-3.1.1.min.js"></script>
+<script src="../../../myjs/bootstrap.min.js"></script>
+<script src ="../../../myjs/holder.js"></script>
 </body>
 </html>

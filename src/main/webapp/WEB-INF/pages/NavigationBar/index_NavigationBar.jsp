@@ -5,8 +5,8 @@
 <head>
     <meta charset="utf-8">
     <title>数字媒体学习网站</title>
-    <link rel="stylesheet" href="mycss/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="mycss/mycss.css">
+    <link rel="stylesheet" href="../../../mycss/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../mycss/mycss.css">
 
 </head>
 <body>
@@ -54,8 +54,8 @@
         </div>
     </div>
 </nav>
-<script src="myjs/jquery-3.1.1.min.js"></script>
-<script src="myjs/myjs.js"></script>
-<script src="myjs/bootstrap.min.js"></script>
+<script src="../../../myjs/jquery-3.1.1.min.js"></script>
+<script src="../../../myjs/myjs.js"></script>
+<script src="../../../myjs/bootstrap.min.js"></script>
 </body>
 </html>

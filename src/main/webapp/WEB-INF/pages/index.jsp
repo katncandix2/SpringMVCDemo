@@ -7,8 +7,8 @@
     <meta charset="utf-8">
     <title>数字媒体学习网站</title>
     <link rel="icon" href="http://v3.bootcss.com/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="mycss/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="mycss/mycss.css">
+    <link rel="stylesheet" type="text/css" href="../../mycss/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../mycss/mycss.css">
 
 
 </head>
@@ -57,8 +57,8 @@
     </div>
 </div>
 
-<script src="myjs/jquery-3.1.1.min.js"></script>
-<script src="myjs/bootstrap.min.js"></script>
-<script src ="myjs/holder.js"></script>
+<script src="../../myjs/jquery-3.1.1.min.js"></script>
+<script src="../../myjs/bootstrap.min.js"></script>
+<script src ="../../myjs/holder.js"></script>
 </body>
 </html>
