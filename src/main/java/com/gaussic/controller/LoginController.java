@@ -49,7 +49,7 @@ public class LoginController {
                 return "index";
             }
             else{
-                return "login/loginFail";
+                return "redirect:/login";
             }
         }
         return "login/loginFail";
@@ -65,8 +65,13 @@ public class LoginController {
     //注册验证
     @RequestMapping(value = "/CheckRegister",method = RequestMethod.POST)
     public String CheckRegister(UsercopyEntity usercopyEntity){
-        System.out.print(usercopyEntity.getEmail() + usercopyEntity.getPassword() + usercopyEntity.getNickname());
-        userCopyRepository.saveAndFlush(usercopyEntity);
-        return "login/RegisterSuccess";
+        if(userCopyRepository.find_user_byEmail(usercopyEntity.getEmail())!=null){
+            return "redirect:/register";
+        }
+        else {
+            userCopyRepository.saveAndFlush(usercopyEntity);
+            return "redirect:/login";
+        }
+
     }
 }
