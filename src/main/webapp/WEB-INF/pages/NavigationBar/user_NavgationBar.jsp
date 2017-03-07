@@ -48,7 +48,7 @@
                     <li><a href="#">注册</a></li>
                 </ul>
                 <p class="navbar-text">您好,
-                    <a href="#" class="navbar-link">${requestScope.user.email}</a>
+                    <a href="#" class="navbar-link">${sessionScope.user.email}</a>
                 </p>
             </div>
         </div>

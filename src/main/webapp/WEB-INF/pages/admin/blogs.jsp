@@ -23,7 +23,7 @@
     <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body background="">
 <jsp:include page="../NavigationBar/blog_NavigationBar.jsp"/>
 <div class="container">
     <h1>SpringMVC 博客系统-博客管理</h1>

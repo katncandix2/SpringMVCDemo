@@ -8,6 +8,8 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.bind.support.SessionStatus;
 
 import java.util.List;
 
@@ -15,6 +17,7 @@ import java.util.List;
  * Created by ACER on 2017/3/1.
  */
 @Controller
+@SessionAttributes(value = "user")
 public class LoginController {
     @Autowired
     UserCopyRepository userCopyRepository;
@@ -55,10 +58,12 @@ public class LoginController {
         return "login/loginFail";
     }
     //注销
+    //清除SessionAttribute
     @RequestMapping(value = "/unLogin" ,method = RequestMethod.GET)
-    public String unLogin(ModelMap modelMap){
+    public String unLogin(ModelMap modelMap,SessionStatus sessionStatus){
 
         modelMap.remove("user");
+        sessionStatus.setComplete();
         return "index";
     }
 
