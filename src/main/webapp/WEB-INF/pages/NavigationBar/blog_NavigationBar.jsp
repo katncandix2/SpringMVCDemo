@@ -27,10 +27,10 @@
         <div class="collapse navbar-collapse" id = "responsive-navbar">
 
             <ul class="nav navbar-nav">
-                <li ><a href="#">课程</a></li>
+                <li ><a href="/CoureseIndex">课程</a></li>
                 <li class="active"><a href="/admin/blogs">博客</a></li>
-                <li ><a href="#">手册</a></li>
-                <li ><a href="#">留言板</a></li>
+                <li ><a href="#">学习</a></li>
+                <li ><a href="#">考试</a></li>
             </ul>
             <form action="" class="navbar-form navbar-left">
                 <input type="text" placeholder="搜索" class="form-control">
@@ -47,7 +47,7 @@
                     <li><a href="/login">登陆</a></li>
                     <li><a href="/register">注册</a></li>
                 </ul>
-                <p class="navbar-text">您好,
+                <p class="navbar-text">
                     <a href="/unLogin" class="navbar-link">${sessionScope.user.email}</a>
                 </p>
             </div>
