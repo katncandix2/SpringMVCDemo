@@ -120,6 +120,8 @@
                     fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
                 <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
 
+
+
                 <!--轮询展示各个用户所发布内容-->
                 <c:if test="${!empty bloglist}">
                     <c:forEach items="${bloglist}" var="blog">
