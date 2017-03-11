@@ -29,7 +29,7 @@
             <ul class="nav navbar-nav">
                 <li class="active"><a href="/CoureseIndex">课程</a></li>
                 <li ><a href="/admin/blogs">博客</a></li>
-                <li ><a href="#">学习</a></li>
+                <li ><a href="/indexPlay">学习</a></li>
                 <li ><a href="#">考试</a></li>
             </ul>
             <form action="" class="navbar-form navbar-left">
@@ -40,7 +40,7 @@
                 </button>
 
             </form>
-            <a href="" class="btn btn-primary btn-sm navbar-btn navbar-right hidden-xs">关注我们</a>
+            <a href="#" class="btn btn-primary btn-sm navbar-btn navbar-right hidden-xs">关注我们</a>
 
             <div class="profile navbar-right" >
                 <ul class="nav navbar-nav">

@@ -186,7 +186,7 @@
     <p>Blog template built for <a href="http://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.
     </p>
     <p>
-        <a href="http://v3.bootcss.com/examples/blog/#">Back to top</a>
+        <a href="/CoureseIndex#">Back to top</a>
     </p>
 </div>
 

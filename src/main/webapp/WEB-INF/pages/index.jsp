@@ -2,7 +2,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@page isELIgnored="false" %>
 <!DOCTYPE >
-<html  lang="zh-CN">
+<html lang="zh-CN">
 <head>
     <meta charset="utf-8">
     <title>数字媒体学习网站</title>
@@ -13,10 +13,10 @@
 
 </head>
 <body>
-<jsp:include page="NavigationBar/index_NavigationBar.jsp"/>
+<jsp:include page="NavigationBar/main_NavigationBar.jsp"/>
 
 <!-- 旋转木马 -->
-<div class="carousel slide" data-ride = "carousel" id="slideshow">
+<div class="carousel slide" data-ride="carousel" id="slideshow">
 
     <ol class="carousel-indicators">
         <li data-target="#slideshow" data-slide-to="0" class="active"></li>
@@ -26,18 +26,17 @@
     <div class="carousel-inner">
         <div class="item active">
             <a href="#">
-                <img src="img/background/Antelope Canyon.jpg" alt="" >
+                <img src="img/background/Antelope Canyon.jpg" alt="">
             </a>
             <div class="carousel-caption">
                 <h2>数字媒体课程学习</h2>
                 <p>OpenCv图像处理</p>
             </div>
-
         </div>
 
         <div class="item">
             <a href="#">
-                <img src="img/background/Bahamas Aerial.jpg" alt="" >
+                <img src="img/background/Bahamas Aerial.jpg" alt="">
             </a>
             <div class="carousel-caption">
                 <h2>数字媒体课程学习</h2>
@@ -45,12 +44,10 @@
             </div>
 
         </div>
-
         <!-- 左右切换按钮根据#slideshow 切换 -->
         <a href="#slideshow" class="left carousel-control" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left"></span>
         </a>
-
         <a href="#slideshow" class="right carousel-control" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
@@ -59,6 +56,6 @@
 
 <script src="../../myjs/jquery-3.1.1.min.js"></script>
 <script src="../../myjs/bootstrap.min.js"></script>
-<script src ="../../myjs/holder.js"></script>
+<script src="../../myjs/holder.js"></script>
 </body>
 </html>
